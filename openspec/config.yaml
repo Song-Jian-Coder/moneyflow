@@ -14,10 +14,23 @@ context: |
   项目名称：first_moneyflow
   项目描述：基于 OpenSpec + Superpowers 体系的 AI 协作开发项目
 
-  技术栈：待确定
-  接口约定：待确定
-  测试框架：待确定
-  代码风格：待确定
+  技术栈：
+    后端：Java 17 + Spring Boot 3.2.5 + Maven 多模块 + Spring Data JPA + H2(开发)/MySQL(生产)
+    前端：Next.js (App Router) + TypeScript + Tailwind CSS
+    规范：OpenSpec + Superpowers 双框架
+    接口文档：SpringDoc OpenAPI
+
+  接口约定：
+    前后端字段命名统一驼峰法（camelCase）
+    后端统一响应格式：Result<T>（code / message / data）
+    业务异常通过 BusinessException 抛出，HTTP 200 + 自定义 code
+
+  项目约束：
+    团队 3 人，全员熟悉 React，有充足 Spring Boot 经验
+    8 周 MVP 周期，必须上线
+    部署环境：Vercel 或 Docker
+    AI 辅助开发为主
+    线上可持续运行迭代的长期项目
 
 # ============================================================
 # 工件规则 — 按工件类型设置硬性约束

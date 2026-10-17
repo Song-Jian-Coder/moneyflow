@@ -1,0 +1,6 @@
+[submodule "backend"]
+	url = https://github.com/Song-Jian-Coder/moneyflow_backend.git
+	path = backend
+[submodule "frontend"]
+	url = https://github.com/Song-Jian-Coder/moneyflow_frontend.git
+	path = frontend
